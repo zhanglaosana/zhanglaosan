@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>医患平台</title>
+	<link rel="stylesheet" href="style/index.css">
+</head>
+<body>
+	<header>
+		<div class="logo">
+			<img src="images/logo0.png" alt="">
+		</div>
+		<div class="list">
+			<ul>
+				<li><a href="####">首页</a></li>
+				<li><a href="####">健康</a></li>
+				<li><a href="####">联系我们</a></li>
+			</ul>
+		</div>
+		<div class="search">
+			<form action="">
+				<input type="text" placeholder="Search" class="ione">
+				<input type="submit" value="Go" class="itwo">
+			</form>
+		</div>
+		<div class="login">
+			<a href="####">
+				<b>登录/注册</b>
+			</a>
+		</div>
+	</header>
+	<section>
+		<div class="pic">
+			<img src="images/57a1a391089c0.png" alt="">
+		</div>
+		<div class="nav">
+			<ul class="ul">
+				<li>	
+					<a href="###" style="background-color:#55cfc3;
+					color: #fff;
+					font-weight: bold;
+					font-size: 18px;">
+						最热医生
+					</a>
+				</li>
+				<li><a href="###">热点文章</a></li>
+				<li><a href="###">公告</a></li>
+				<li><a href="###">留言板</a></li>
+			</ul>
+			<div class="color clear"></div>
+		</div>
+		<div class="navbox">
+			<ul>
+			{volist}
+				<li>
+					<div class="left">
+						<img src="images/5731bb743e7d3.jpeg" alt="">
+					</div>
+					<div class="right">
+						<h1>aaaaddd</h1>
+						<p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+					</div>	
+				</li>
+			{/volist}
+			</ul>
+			<ul style="display: none;">
+				<li>
+					<div class="left">
+						<img src="images/5731bb743e7d3.jpeg" alt="">
+					</div>
+					<div class="right">
+						<h1>哈哈哈</h1>
+						<p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+					</div>	
+				</li>
+			</ul>
+			<ul style="display: none;">
+				<li>
+					<div class="left">
+						<img src="images/5731bb743e7d3.jpeg" alt="">
+					</div>
+					<div class="right">
+						<h1>嘿嘿额</h1>
+						<p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+					</div>	
+				</li>
+			</ul>
+			<ul style="display: none;">
+				<li>
+					<div class="left">
+						<img src="images/5731bb743e7d3.jpeg" alt="">
+					</div>
+					<div class="right">
+						<h1>西你想想</h1>
+						<p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+					</div>	
+				</li>
+			</ul>
+		</div>
+	</section>
+	<footer class="clear">
+		<div id="footer" class="container-fuild clear" >
+		<p class="copy">
+			<a href="http://www.horusch.com/brand/horusjj.html">公司简介</a> │
+			<a href="###">意见反馈</a> │
+			<a href="###">联系我们</a> |
+			<a href="javascript:void(0);">电话：0755-2322 8276</a> |
+			<a href="javascript:void(0);">企业邮箱：admin@horusch.com</a>
+		</p>
+		<p class="copy">
+			<a href="###">©版权所有 深圳霍尔斯医疗科技公司</a>
+			<a href="###">&nbsp;&nbsp;粤ICP备14055207号-14</a>
+		</p>
+		<div style="width:332px;margin:0 auto; padding:10px 0;text-align:center;"></div>
+	</div>
+	<div id="backtotop">
+		<i class="fa fa-angle-up"></i>
+	</div>
+	<div class="fixed-botbg">
+		<a href="###">
+			<img src="images/upload_3f40f5b12873c5bf569261c7a70de108_1920x130.png">
+		</a>
+		<span class="close-btn view-FixedBotbgcloseBtn"></span>
+	</div>
+	</footer>
+	
+</div>
+</body>
+<script src="style/jquery-3.2.1.js"></script>
+    <script>
+           $(".nav .ul li").click(function(){
+               var index = $(this).index();
+                $(".navbox ul").eq(index).css("display","block").siblings().css("display","none");
+               
+            })
+ 	</script>
+</html>
